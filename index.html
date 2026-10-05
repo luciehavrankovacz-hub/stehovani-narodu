@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Stěhování národů – kdo zničil Řím?</title>
+<style>
+  :root{--bg:#1a1006;--panel:#2a1c0c;--line:#4a3418;--gold:#f2c14a;--red:#d8583a;--grn:#6ac04a;--blue:#6a9ae0;--ink:#f6ecd6;--muted:#cdb88e}
+  *{box-sizing:border-box}
+  body{margin:0;background:radial-gradient(ellipse at top,#3a2610,var(--bg) 60%);color:var(--ink);font-family:'Segoe UI',Arial,sans-serif;line-height:1.5}
+  .wrap{max-width:1100px;margin:0 auto;padding:22px 16px 60px}
+  header{text-align:center;margin-bottom:16px}
+  h1{font-family:'Palatino Linotype',Georgia,serif;font-size:clamp(30px,6vw,56px);margin:4px 0 0;color:var(--gold);letter-spacing:2px;text-shadow:0 3px 0 #5a3a08}
+  .sub{color:var(--muted);font-size:clamp(15px,2.4vw,19px)}
+  .icons{font-size:clamp(26px,5vw,40px);letter-spacing:8px}
+  .badge{display:inline-block;background:linear-gradient(#ffe7a6,#d69a3a);color:#101e3a;font-weight:900;border-radius:8px;padding:0 8px;font-size:.8em}
+  .player{background:#000;border:3px solid var(--gold);border-radius:12px;overflow:hidden;box-shadow:0 10px 40px #000a}
+  video{display:block;width:100%;aspect-ratio:16/9;background:#000}
+  .tip{color:var(--muted);text-align:center;margin:8px 0 0;font-size:15px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}
+  @media(max-width:760px){.grid{grid-template-columns:1fr}}
+  .box{background:var(--panel);border:2px solid var(--line);border-radius:12px;padding:16px 18px}
+  .box h2{margin:0 0 10px;color:var(--gold);font-size:22px}
+  .full{grid-column:1/-1}
+  .chap{display:flex;gap:10px;align-items:baseline;width:100%;text-align:left;font:inherit;font-size:17px;color:var(--ink);background:none;border:0;border-bottom:1px solid var(--line);padding:8px 4px;cursor:pointer}
+  .chap:hover{background:#3a2810}
+  .chap.now{background:#4a3414;color:#fff}
+  .chap b{color:var(--gold);min-width:56px;font-variant-numeric:tabular-nums}
+  table{width:100%;border-collapse:collapse;font-size:15px}
+  td{padding:6px;border-bottom:1px solid var(--line);vertical-align:top}
+  td:first-child{color:var(--gold);font-weight:bold;white-space:nowrap}
+  .red td:first-child{color:var(--red)} .grn td:first-child{color:var(--grn)} .blue td:first-child{color:var(--blue)}
+  .mnem{background:#3a2810;border-left:4px solid var(--gold);padding:10px 14px;border-radius:8px;margin-top:8px;font-size:16px}
+  .big{font-size:20px;font-weight:800;color:var(--red)}
+  footer{text-align:center;color:var(--muted);margin-top:28px;font-size:13px}
+  details summary{cursor:pointer;color:var(--gold);font-weight:bold}
+  details ul{margin:8px 0 0;padding-left:20px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="icons">🏛️🐎🗺️</div>
+    <h1>STĚHOVÁNÍ NÁRODŮ</h1>
+    <div class="sub">Domino: kdo zničil Řím? · průvodce Marcus · Hunové · Attila · rok 476 · Germáni · Slované · 10 minut · <span class="badge">NEPTUN PRO</span></div>
+  </header>
+
+  <div class="player"><video id="v" src="video/stehovani_narodu.mp4" poster="miniatura.jpg" controls preload="metadata" playsinline></video></div>
+  <p class="tip">📱 Na mobilu otoč telefon na šířku a dej celou obrazovku ⛶ · na konci je kvíz a mapa – na každou otázku máš 5 vteřin</p>
+
+  <div class="grid">
+    <div class="box">
+      <h2>🎬 Kapitoly (klikni a video skočí)</h2>
+      <div id="chapters"></div>
+    </div>
+
+    <div class="box">
+      <h2>📜 Stěhování národů</h2>
+      <table>
+        <tr><td>co</td><td>kmenové posuny Germánů a Slovanů</td></tr>
+        <tr><td>kdy</td><td>ve 4. – 7. století n. l.</td></tr>
+        <tr><td>Hunové</td><td>bojovný kmen z Asie (4. st. n. l.), útočí na evropské kmeny a ty se dávají do pohybu; ve 4. st. porazí Germány (Góty)</td></tr>
+        <tr><td>Attila</td><td>v 5. st. n. l. vede Huny – „bič boží“; Římané a Germáni se spojí a Attilu porazí</td></tr>
+      </table>
+    </div>
+
+    <div class="box red">
+      <h2>🏛️ Pád Říma</h2>
+      <table class="red">
+        <tr><td>proč</td><td>římská říše je vyčerpaná, nedokáže se vypořádat s vnějšími útoky Germánů ani s vnitřními nepokoji</td></tr>
+        <tr><td>476 n. l.</td><td>zánik Západořímské říše</td></tr>
+        <tr><td>pozor</td><td>Východořímská říše (Konstantinopol) žije dál</td></tr>
+      </table>
+      <div class="mnem"><span class="big">476 n. l.</span> = zánik Západořímské říše = <b>KONEC STAROVĚKU</b></div>
+    </div>
+
+    <div class="box grn">
+      <h2>⚔️ Germáni – kam došli</h2>
+      <table class="grn">
+        <tr><td>Vizigóti</td><td>→ Španělsko</td></tr>
+        <tr><td>Ostrogóti</td><td>→ Itálie</td></tr>
+        <tr><td>Vandalové</td><td>→ severní Afrika</td></tr>
+        <tr><td>Anglové a Sasové</td><td>→ britské ostrovy</td></tr>
+        <tr><td>Frankové</td><td>→ Francie</td></tr>
+      </table>
+      <div class="mnem">💡 Podle Anglů se jmenuje <b>Anglie</b>, podle Franků <b>Francie</b>.</div>
+    </div>
+
+    <div class="box full blue">
+      <h2>🌾 Slované</h2>
+      <table class="blue">
+        <tr><td>kdo</td><td>indoevropský národ</td></tr>
+        <tr><td>pravlast</td><td>východní Evropa mezi řekami <b>Visla</b> a <b>Dněpr</b></td></tr>
+        <tr><td>stěhování</td><td>začínají v 6. století – důvody: přelidnění, tlak kočovných kmenů (Hunové), nedostatek půdy (neuživí je)</td></tr>
+        <tr><td>západní</td><td>Češi, Poláci, Slováci</td></tr>
+        <tr><td>východní</td><td>Rusové, Ukrajinci, Bělorusové</td></tr>
+        <tr><td>jižní</td><td>Chorvati, Srbové, Slovinci, Bulhaři, Makedonci, Bosňáci</td></tr>
+      </table>
+    </div>
+
+    <div class="box full">
+      <details>
+        <summary>🖼️ Odkud jsou obrazy a fotky (volné licence)</summary>
+        <ul id="kredity"></ul>
+      </details>
+    </div>
+  </div>
+  <footer>Video vyrobil 🔱 NEPTUN PRO (s pomocí AI Claude). Mapy, hudba i hlas jsou vytvořené počítačem, obrazy a fotky jsou z Wikimedia Commons a Openverse.</footer>
+</div>
+
+<script>
+const CHAPTERS = [[0, "Úvod – co se naučíme"], [53, "1. Stěhování národů (Evropa v pohybu)"], [82, "2. Hunové (první kostka domina)"], [122, "3. Attila (bič boží)"], [169, "4. Pád Říma (rok 476)"], [232, "5. Germáni (kam došel který kmen)"], [304, "6. Slované (naši předkové)"], [394, "7. Kvíz a mapa (otázky na test)"]];
+const KREDITY = ["Than Mór - Attila lakomája (1870).jpg - Mór Than (Public domain, Wikimedia Commons)", "0 Chambre de Raphaël - Rencontre de Léon le Grand et d\u0027Attila.JPG - Raphael (Public domain, Wikimedia Commons)", "Mâcon - Église Saint-Vincent - 3.jpg - Benjamin Smith (CC BY-SA 4.0, Wikimedia Commons)", "Bank of the Dnieper River in the Obolon area. Kiev, Ukraine.jpg - Ввласенко (CC BY-SA 3.0, Wikimedia Commons)", "Temple Mercurius - Maurits Verbiest (CC BY 2.0, Openverse / flickr)", "Hagia Sophia - Ayasofya - Αγία Σοφία - fusion-of-horizons (CC BY 2.0, Openverse / flickr)", "Huns by Rochegrosse 2.jpg - Georges Rochegrosse (CC BY-SA 3.0, Openverse / wikimedia)", "Die Hunnenschlacht Raab nach Wilhelm von Kaulbach.jpg - Engraving: J.L. Raab; Painting: Wilhelm von Kaulbach (1805–74) (Public domain, Wikimedia Commons)", "Theodosian Walls of Constantinople, Istanbul (24053561188).jpg - Carole Raddato from FRANKFURT, Germany (CC BY-SA 2.0, Wikimedia Commons)", "Tesoro de Guarrazar (M.A.N. Inv. 71207 \u0026 71211) 01a.jpg -  (CC BY-SA 3.0, Wikimedia Commons)", "Cole Thomas The Course of Empire Destruction 1836.jpg - Thomas Cole (Public domain, Wikimedia Commons)", "Gold Solidus of Romulus Augustulus.jpg - ANS (CC0, Wikimedia Commons)", "Historical stylization — Slavic of the 12-13th centuries, Karoling Club Ruza - Dmitry Nikolaev / Дмитрий Николаев (CC BY-SA 4.0, Openverse / wikimedia)", "Festiwal Naadam na stepie na obrzeżach Ułan Bator 19.JPG - Marcin Konsek (CC BY-SA 4.0, Wikimedia Commons)", "Museo Británico, Londres, Inglaterra, 2022-11-26, DD 46.jpg - Diego Delso (CC BY-SA 4.0, Wikimedia Commons)", "Mausoleo di Teodorico, Ravenna.png - Stefano Casano (CC BY-SA 4.0, Wikimedia Commons)", "Genseric sacking Rome 455 The Sack of Rome, Karl Briullov, 1833-1836.jpg - Karl Bryullov (Public domain, Wikimedia Commons)", "Wisła wczesnym ranem poniżej zapory w Łączanach pod Krakowem, 20250105 0832 6930.jpg - Jakub Hałun (CC BY 4.0, Wikimedia Commons)"];
+const v = document.getElementById('v');
+const zvukZap = () => { v.muted = false; v.defaultMuted = false; v.removeAttribute('muted'); if (v.volume < 0.05) v.volume = 1; };
+zvukZap();
+v.addEventListener('loadedmetadata', zvukZap);
+v.addEventListener('play', zvukZap);
+const fmt = s => Math.floor(s / 60) + ':' + String(Math.floor(s % 60)).padStart(2, '0');
+const box = document.getElementById('chapters');
+CHAPTERS.forEach(([t, name]) => {
+  const b = document.createElement('button'); b.className = 'chap'; b.dataset.t = t;
+  b.innerHTML = '<b>' + fmt(t) + '</b><span>' + name + '</span>';
+  b.onclick = () => {
+    const go = () => { zvukZap(); v.currentTime = t; v.play().catch(() => {}); };
+    if (v.readyState >= 1) go(); else { v.addEventListener('loadedmetadata', go, { once: true }); v.load(); }
+    v.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  };
+  box.appendChild(b);
+});
+v.addEventListener('timeupdate', () => {
+  let cur = null; document.querySelectorAll('.chap').forEach(b => { b.classList.remove('now'); if (+b.dataset.t <= v.currentTime) cur = b; });
+  if (cur) cur.classList.add('now');
+});
+const ul = document.getElementById('kredity');
+KREDITY.forEach(k => { const li = document.createElement('li'); li.textContent = k; ul.appendChild(li); });
+</script>
+</body>
+</html>
